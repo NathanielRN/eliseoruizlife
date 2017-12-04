@@ -1,25 +1,13 @@
 $(document).ready(function() {
-    
-    
-    /* For the sticky navigation */
-    $('.js--section-features').waypoint(function(direction) {
-        if (direction == "down") {
-            $('nav').addClass('sticky');
+   
+    $(".js--section-header").waypoint(function(direction) {
+        $("nav").addClass("animated slideInDown");
+        if (direction === "down") {
+            $("nav").addClass("sticky");
         } else {
-            $('nav').removeClass('sticky');
-        }
-    }, {
-      offset: '60px;'
-    });
-    
-    
-    /* Scroll on buttons */
-    $('.js--scroll-to-plans').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
-    });
-    
-    $('.js--scroll-to-start').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
+            $("nav").removeClass("sticky");
+        }}, {
+        offset: "-1px;"
     });
     
     // Select all links with hashes
@@ -73,20 +61,14 @@ $('a[href*="#"]')
     });
     
     $('.js--wp-3').waypoint(function(direction) {
-       $('.js--wp-3').addClass('animated fadeIn'); 
-    }, {
-        offset: '50%;'
-    });
-    
-    $('.js--wp-4').waypoint(function(direction) {
-       $('.js--wp-4').addClass('animated pulse'); 
+       $('.js--wp-3').addClass('animated fadeInUp'); 
     }, {
         offset: '50%;'
     });
     
     /* Mobile navigation */
     $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
+        var nav = $('.js--nav-list');
         var icon = $('.js--nav-icon i');
         nav.slideToggle(200);
         if (icon.hasClass('ion-navicon-round')) {
@@ -97,4 +79,5 @@ $('a[href*="#"]')
             icon.removeClass('ion-close-round');
         }
     });
+    
 });
