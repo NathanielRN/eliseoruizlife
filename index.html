@@ -3,429 +3,207 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Omnifood is a premium food delivery service with a mission to bring affordable and healthy meals to as many people as possible.">
+        <meta name="description" content="Portfolio website for Eliseo Ruiz Nowell, a Computer Engineering student at Univeristy of Waterloo.">
         
-        <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css" >
+        <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
         <link href="vendors/css/grid.css" rel="stylesheet" type="text/css">
         <link href="vendors/css/ionicons.css" rel="stylesheet" type="text/css">
         <link href="vendors/css/animate.css" rel="stylesheet" type="text/css">
-        <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-        <link href="resources/css/queries.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
-        <title> Omnifood </title>
         
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
-        <link rel="manifest" href="resources/favicons/manifest.json">
-        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <link href='resources/css/style.css' rel='stylesheet' type='text/css'>
+        <link href='resources/css/queries.css' rel='stylesheet' type='text/css'>
+        
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-    
+        <title> Eliseo Ruiz's Life</title>
+        
     </head>
-    
     <body>
-        <header>
-            <nav> <!--- jQuery allows us to add classes to these tags! --->
+        <header class="main-header js--section-header">
+            <nav>
                 <div class="row">
-                    <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo">
-                    <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black">
-                    <ul class="main-nav js--main-nav">
-                        <li> <a href="#features">Food delivery</a> </li>
-                        <li> <a href="#works">How it works</a> </li>
-                        <li> <a href="#cities">Our Cities</a> </li>
-                        <li> <a href="#plans">Sign up</a> </li>
+                    <a href="https://github.com/NathanielRN" target="_blank"><img class="github-logo" src='resources/images/github-logo.svg' alt='GitHub Logo'></a>
+                    <p class="nav-username">NathanielRN</p>
+                    <ul class="nav-list js--nav-list">
+                        <li> <a href="#AboutMe">About Me</a> </li>
+                        <li> <a href="#Projects">Projects</a> </li>
+                        <li> <a href="#Experience">Experience</a> </li>
+                        <li> <a href="./Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank">Resume</a> </li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
-            <div class="hero-text-box">
-                <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
-            
+            <div class='header-box'>
+                <h6>The life of...</h6>
+                <h1 class="js--wp-1">Eliseo Nathaniel <br> Ruiz Nowell </h1>
+                <a class= "btn btn-full" href="./Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank">Resume</a>
             </div>
         </header>
-        <section class="section-features js--section-features" id="features">
+        <section id="AboutMe">
             <div class="row">
-                <h2>Get food fast &mdash; not fast food.</h2>
-                <p class="long-copy">
-                    Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
-                </p>
-            </div>
-            <div class="row js--wp-1">
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-infinite-outline icon-big"></i>
-                    <h3>Up to 365 day/year</h3>
-                    <p>
-                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-stopwatch-outline icon-big"></i>
-                    <h3>Ready in 20 minutes</h3>
-                    <p>
-                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-nutrition-outline icon-big"></i>
-                    <h3>100% organic</h3>
-                    <p>
-                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-cart-outline icon-big"></i>
-                    <h3>Order anything</h3>
-                    <p>
-                       We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section-meals" id="works">
-            <ul class="meals-showcase clearfix">
-                <li> <!--- li elements have a default float property. Clearfix fixes that---> 
-                    <figure class="meal-photo">
-                        <img src="resources/images/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/2.jpg" alt="Simple italian pizza with cherry tomatoes">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/3.jpg" alt="Chicken breast steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/4.jpg" alt="Autumn pumpkin soup">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/5.jpg" alt="Paleo beef steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/6.jpg" alt="Healthy baguette with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/7.jpg" alt="Burger with cheddar and bacon">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/8.jpg" alt="Granola with cherries and strawberries">
-                    </figure>
-                </li>
-            </ul>
-        </section>
-        <section class="section-steps">
-            <div class="row">
-                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
-                </div>
-                <div class="col span-1-of-2 steps-box">
-                    <div class="works-step">
-                        <div>1</div>
-                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+            <h2>Student at "Life"</h2>
+                <div class="root me-card">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img class="eruiz-headshot" src="resources/images/eliseo-headshot-min.jpg" alt="Eliseo Headshot">
                     </div>
-                    <div class="works-step">
-                        <div>2</div>
-                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
-                    </div>
-                    <div class="works-step">
-                        <div>3</div>
-                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
-                    </div>
-                    
-                    <a href="#" class="btn-app"><img src="resources/images/download-app.svg" alt="Apple App Logo"></a>
-                    <a href="#" class="btn-app"><img src="resources/images/download-app-android.png" alt="Apple App Logo"></a>
-                </div>
-            </div>
-        </section>
-        <section class="section-cities js--wp-3" id="cities">
-            <div class="row">
-                <h2>We're currently in these cities</h2>
-                <div class="row">
-                    <div class="col span-1-of-4 box">
-                        <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
-                        <h3>Lisbon</h3>
-                        <div class="city-feature">
-                            <i class="ion-ios-person icon-small"></i>
-                            1600+ happy eaters
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-ios-star icon-small"></i>
-                            60+ top chefs
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-social-twitter icon-small"></i>
-                            <a href="#">@omnifood_lx</a>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-4 box">
-                        <img src="resources/images/san-francisco.jpg" alt="San Fransisco">
-                        <h3>San Fransisco</h3>
-                        <div class="city-feature">
-                            <i class="ion-ios-person icon-small"></i>
-                            3700+ happy eaters
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-ios-star icon-small"></i>
-                            1600+ happy eaters
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-social-twitter icon-small"></i>
-                            <a href="#">@omnifood_sf</a>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-4 box">
-                        <img src="resources/images/berlin.jpg" alt="Berlin">
-                        <h3>Berlin</h3>
-                        <div class="city-feature">
-                            <i class="ion-ios-person icon-small"></i>
-                            2300+ happy eaters
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-ios-star icon-small"></i>
-                            160+ top chefs
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-social-twitter icon-small"></i>
-                            <a href="#">@omnifood_berlin</a>
-                        </div>
-                    </div>
-                    <div class="col span-1-of-4 box">
-                        <img src="resources/images/london.jpg" alt="London">
-                        <h3>London</h3>
-                        <div class="city-feature">
-                            <i class="ion-ios-person icon-small"></i>
-                            1200+ happy eaters
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-ios-star icon-small"></i>
-                            50+ top chefs
-                        </div>
-                        <div class="city-feature">
-                            <i class="ion-social-twitter icon-small"></i>
-                            <a href="#">@omnifood_london</a>
-                        </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h3> About Me</h3>
+                        <p> Hi! I'm a 2nd year University of Waterloo Computer Enginnering Student who loves to code almost as much as I love meeting new people! At UW I've fostered my sense of independence, resourcefulness, and have become more innovative using what I've learnt to build my own projects and make contribute in big ways over co-op. In 2 terms at UW I obtained an 85.5% average to earn the highest possible academic standing of "Excellent". Most recently I worked as a Backend Developer at Yahoo! where I became very familiar with databases, HTTPS requests, and AWS integration.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-testimonials">
-            <div class="row">
-                <h2>Our customers can't live without us!</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-                        <cite><img src="resources/images/customer-1.jpg" alt="Customer 1 Photo">Alberto Duncan</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-                        <cite><img src="resources/images/customer-2.jpg" alt="Customer 2 Photo">Joana Silva</cite>
-                    </blockquote>
-                </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-                        <cite><img src="resources/images/customer-3.jpg" alt="Customer 3 Photo">Milton Chapman</cite>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Start eating healthy today</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="plan-box js--wp-4">
-                        <div>
-                            <h3>Premium</h3>
-                            <p class="plan-price">$399 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only $13.99 per meal</p>
+                <div class="root waterloo-info">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img class="waterloo-stamp" src="resources/images/waterloo-logo-min.png" alt="University of Waterloo Logo">
+                    </div>
+                    <div class="col span-2-of-3 waterloo-text">
+                        <h3>2A Computer Engineering Student</h3>
+                        <div class="waterloo-data">
+                        <div class="col span-1-of-2 gpa-info">
+                            <h4>GPA</h4>
+                            <p>85.5%</p>
+                            <a class="btn btn-full" href="https://uwaterloo.ca/math/current-undergraduates/regulations-and-procedures/summary-academic-standings" target="_blank">"Excellent Standing"</a>
                         </div>
-                        <div>
+                        <div class="col span-1-of-2 waterloo-coursework">
+                            <h4>Coursework</h4>
                             <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                                <li class="uw-course">Algorithms &amp; Data Structures</li>
+                                <li class="uw-course">Calculus 2 for Engineering</li>
+                                <li class="uw-course">Engineering Design with Embedded Systems</li>
+                                <li class="uw-course">Discrete Mathematics</li>
+                                <li class="uw-course">Digital Circuits and Systems</li>
                             </ul>
                         </div>
-                        <div>
-                            <a href="#" class="btn btn-full">Sign Up Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Pro</h3>
-                            <p class="plan-price">$149 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only $14.09 per meal</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Starter</h3>
-                            <p class="plan-price">$19 <span>/ meal</span></p>
-                            <p class="plan-price-meal">&nbsp;</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i></li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-form">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <div class="row showcase">
+                <h3>Mobile</h3>
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo js--wp-2">
+                        <img src="resources/images/app-iPhone-min.png" alt="Color Conquest Image">
+                    </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>Color Conquest</h4>
+                        <h5>Swift, &nbsp;git, &nbsp;CocoaPods, &nbsp;AdMobs</h5>
+                        <p>
+                            Designed Bluetooth connected state-machine for communication across devices<br><br>
+                            Researched docs to add tables/collections populated by dynamically changing data<br><br>
+                            Respected Apple’s MVC by implementing delegates and protocols as part of POP<br><br>
+                            Considered game end algorithm performance to optimize slower devices response<br><br>
+                        </p>
+                        <a class="btn btn-full" href="https://itunes.apple.com/app/id1316312994">App Store</a>
+                    </div>
+                </div>
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo js--wp-3">
+                        <img src="resources/images/wat-2048-min.png" alt="Wat 2048 Image">
+                    </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>Wat 2048</h4>
+                        <h5>Java, &nbsp;Android Studio</h5>
+                        <p>
+                            Processed data received from accelerometer/rotational sensors and ensured appropriate event handlers were called using the Android Studio IDE<br><br>
+                            Replicating the popular mobile game using OOP Java design techniques<br><br>
+                            As delegated project manager I oversaw the implementation of our team design and coordinated progress using Subversion<br><br>
+                            Investigated best cross-OS compatability techniques as well as performance optimization when using a running game loop<br><br>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="nameId">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="nameId" placeholder="Your name" required>
-                        </div>
+            <div class="row showcase">
+                <h3>Backend</h3>
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img src="resources/images/pray4meBackend-logo-min.png" alt="Pray 4 Me Backend App">
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="emailId">E-mail</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="emailId" placeholder="Your email" required>
-                        </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>Pray4MeBackend</h4>
+                        <h5>node.js, &nbsp;express, &nbsp;mongoDB, &nbsp;git</h5>
+                        <p>
+                            Functional server client on heroku to handle CRUD requests using express module<br><br>
+                            Included a driver to store by logged in FB id to the incorporated mongoDB database<br><br>
+                            Integrated with authorization tokens to make JSON data request from bibles.org to allow verse lookup and with a separate driver to support image uploading<br><br>
+                        </p>
+                        <a class="btn btn-full" href="https://github.com/NathanielRN/Pray4MeBackend" target="_blank">Git</a>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-usId">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-usId">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Searh Enginer</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="Experience">
+            <h2>Experience</h2>
+            <div class="row showcase">
+                <h3>Yahoo!</h3>
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img src="resources/images/yahoo-logo.svg" alt="Yahoo! logo">
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>Backend Developer Intern</h4>
+                        <h5>node.js, &nbsp;MySQL, &nbsp;express, &nbsp;AWS, &nbsp;Python, &nbsp;YAML, &nbsp;Mocha, &nbsp;Memcached</h5>
+                        <p>
+                            API &amp; Database developer for Yahoo! View product <br><br>
+                            Developed node.js CRUD handlers for MySQL database modification and retrieval<br><br>
+                            Created Python file I/O methods to populate .tsv files with series and episode items<br><br>
+                            Used AWS CloudSearch to facet and filterQuery buckets, used Elastic BeanStalk together with SQS to queue automatic async server requests on SSL enabled HTTPS<br><br>
+                            Finished episode stream SQL fetch tool with retry, query parameters for genre/offset<br><br>
+                            Introduced validation of assets with YAML swagger files and Mocha system/unit tests<br><br>
+                        </p>
+                        <a class="btn btn-full" href="https://view.yahoo.com" target="_blank">Yahoo! View</a>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
+                </div>
+            </div>
+            <div class="row showcase">
+                <h3>Rave</h3>
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img src="resources/images/rave-logo.svg" alt="Rave logo">
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it">
-                        </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>iOS Developer Intern</h4>
+                        <h5>Swift, &nbsp;git, &nbsp;Xcode, &nbsp;vim, &nbsp;Objective-C, &nbsp;CocoaPods </h5>
+                        <p>
+                            Worked with Swift database and Objective-C libraries to fix bugs, fix crashes, revamp the UI and optimize performance by considering multi-threading/async requests<br><br>
+                            Mastered Xcode IDE, iOS SDK, and 3rd party library integration (SDWebImage)<br><br>
+                            Communicated with coworkers to localize the app into 4 different languages<br><br>
+                            Polished git skills to solve conflicts with vim, ease rebasing, and cherry-pick commits<br><br>
+                            Refactored user flow across all screens as part of collaboration with UX designer<br><br>
+                        </p>
+                        <a class="btn btn-full" href="https://itunes.apple.com/us/app/rave-videos-with-friends/id929775122?mt=8">App Store</a>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
+                <div class="col span-6-of-7 footer-text">
                     <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
+                        <li><a href="https://uwaterloo.ca/hire/">About UW Co-op Work Term</a></li>
+                        <li><a href="https://uwaterloo.ca/electrical-computer-engineering/about-electrical-and-computer-engineering">About UW Computer Engineering</a></li>
+                        <li><a href="mailto:enruizno@edu.uwaterloo.ca?Subject=I%20Love%20Your%20Website!" target="_top">Contact Eliseo By E-mail</a></li>
                     </ul>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-7">
                     <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="https://github.com/NathanielRN" target="_blank"><i class="ion-social-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nathanielruiz/" target="_blank"><i class="ion-social-linkedin bob"></i></a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2015 by Omnifood. All right reserved.
-                </p>
             </div>
         </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="resources/javascript/script.js"></script>
-    <script src="vendors/javascript/jquery.waypoints.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110323397-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-110323397-1');
-    </script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="resources/javascript/script.js"></script>
+        <script src="vendors/javascript/jquery.waypoints.min.js"></script>
     </body>
-    
 </html>
