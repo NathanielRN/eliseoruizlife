@@ -4,446 +4,1009 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliseo Ruiz Nowell — Software Engineer</title>
     <meta name="description"
-        content="Portfolio website for Eliseo Ruiz Nowell, a Software Engineer in Seattle, WA working on Amazon Just Walk Out.">
+        content="Eliseo Nathaniel Ruiz Nowell is a Software Engineer in Seattle, WA. He leads releases of computer vision and neural network algorithms for Amazon Just Walk Out.">
+    <meta name="author" content="Eliseo Nathaniel Ruiz Nowell">
+    <link rel="canonical" href="https://nathanielrn.github.io/eliseoruizlife/">
 
-    <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="vendors/css/grid.css" rel="stylesheet" type="text/css">
-    <link href="vendors/css/ionicons.css" rel="stylesheet" type="text/css">
-    <link href="vendors/css/animate.css" rel="stylesheet" type="text/css">
-
-    <link href='resources/css/style.css' rel='stylesheet' type='text/css'>
-    <link href='resources/css/queries.css' rel='stylesheet' type='text/css'>
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eliseo Ruiz Nowell — Software Engineer">
+    <meta property="og:description"
+        content="Software Engineer in Seattle, WA. I lead releases of computer vision and neural network algorithms for Amazon Just Walk Out.">
+    <meta property="og:url" content="https://nathanielrn.github.io/eliseoruizlife/">
+    <meta property="og:image"
+        content="https://nathanielrn.github.io/eliseoruizlife/resources/images/eliseo-headshot-min.jpg">
+    <meta name="twitter:card" content="summary">
 
     <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
     <link rel="manifest" href="resources/favicons/manifest.json">
-    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#ff9a3c">
     <link rel="shortcut icon" href="resources/favicons/favicon.ico">
     <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <title> Eliseo Ruiz's Life</title>
+    <meta name="theme-color" content="#08090c">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/site.css">
 </head>
 
 <body>
-    <header class="main-header js--section-header">
-        <nav>
-            <div class="row">
-                <a href="https://github.com/NathanielRN" target="_blank"><img class="github-logo"
-                        src='resources/images/github-logo.svg' alt='GitHub Logo'></a>
-                <p class="nav-username">NathanielRN</p>
-                <ul class="nav-list js--nav-list">
-                    <li> <a href="#AboutMe">About Me</a> </li>
-                    <li> <a href="#Projects">Projects</a> </li>
-                    <li> <a href="#Experience">Experience</a> </li>
-                    <li> <a href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank">Resume</a> </li>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <header class="site-header js-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#top">
+                <span class="brand__mark" aria-hidden="true">ER</span>
+                <span>
+                    <span class="brand__name">Eliseo Ruiz Nowell</span>
+                    <span class="brand__role">Software Engineer</span>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Main">
+                <ul class="nav__list js-nav-list" id="nav-list">
+                    <li><a class="nav__link" href="#about">About</a></li>
+                    <li><a class="nav__link" href="#experience">Experience</a></li>
+                    <li><a class="nav__link" href="#skills">Skills</a></li>
+                    <li><a class="nav__link" href="#projects">Projects</a></li>
+                    <li><a class="nav__link" href="#contact">Contact</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>
-        <div class='header-box'>
-            <h6>The life of...</h6>
-            <h1 class="js--wp-1">Eliseo Nathaniel <br> Ruiz Nowell </h1>
-            <a class="btn btn-full" href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank">Resume</a>
+
+                <a class="btn btn--primary btn--sm"
+                    href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <path d="M14 2v6h6M9 15h6M9 11h3" />
+                    </svg>
+                    Résumé
+                </a>
+
+                <button class="nav__toggle js-nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6L6 18" />
+                    </svg>
+                </button>
+            </nav>
         </div>
     </header>
-    <section id="AboutMe">
-        <div class="row">
-            <h2>Software Engineer</h2>
-            <div class="root content-row">
-                <div class="showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img class="eruiz-headshot circle-img" src="resources/images/eliseo-headshot-min.jpg"
-                            alt="Eliseo Headshot">
+
+    <main id="top">
+        <!-- ============================ Hero ============================ -->
+        <section class="hero">
+            <div class="container hero__grid">
+                <div>
+                    <p class="hero__pill">
+                        <span class="hero__pill-dot" aria-hidden="true"></span>
+                        SDE 2 at Amazon Just Walk Out &middot; Seattle, WA
+                    </p>
+
+                    <h1 class="hero__title">
+                        Eliseo Nathaniel
+                        <span>Ruiz Nowell</span>
+                    </h1>
+
+                    <p class="hero__lede">
+                        I am a software engineer with 5 years of full-time industry experience, and I take machine
+                        learning out of research notebooks and into production. Today I lead releases of the computer
+                        vision and neural network algorithms behind Amazon Just Walk Out &mdash; the technology that
+                        lets shoppers pick up what they need and leave without stopping to check out.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary"
+                            href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Resume.pdf" target="_blank"
+                            rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3v12m0 0l4-4m-4 4l-4-4" />
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+                            </svg>
+                            Download résumé
+                        </a>
+                        <a class="btn btn--ghost" href="#experience">
+                            See my work
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 5v14m0 0l6-6m-6 6l-6-6" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h3> About Me</h3>
-                        <p> Hi! I am a Software Engineer in Seattle, WA with 5 years of full-time industry experience,
-                            and a University of Waterloo Computer Engineering Graduate who is passionate about
-                            using Machine Learning and Artificial Intelligence to train systems that will improve our
-                            day-to-day lives. Today I am an SDE 2 on Amazon Just Walk Out, where I lead the release of
-                            Computer Vision and Neural Network algorithms that let shoppers grab what they want and
-                            leave without stopping to check out. Before that I worked on AWS X-Ray, where I became very
-                            familiar with writing code to integrate Amazon Web Services with OpenTelemetry. At UW I've
-                            fostered my sense of independence, resourcefulness, and have been fortunate to have made big
-                            contributions over 6 Co-ops (24 Months). Over 8 terms at UW I obtained a cumulative average
-                            of 90.3%. I am also AWS Cloud Practitioner certified and speak fluent Spanish and French,
-                            plus intermediate Mandarin Chinese.</p>
+
+                    <div class="hero__socials">
+                        <a class="icon-btn" href="https://github.com/NathanielRN" target="_blank" rel="noopener"
+                            aria-label="GitHub profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.4-3.88-1.4-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z" />
+                            </svg>
+                        </a>
+                        <a class="icon-btn" href="https://www.linkedin.com/in/nathanielruiz/" target="_blank"
+                            rel="noopener" aria-label="LinkedIn profile">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9.75h4v11.25H3zM10 9.75h3.8v1.54h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.09V21h-4v-5.02c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V21h-4z" />
+                            </svg>
+                        </a>
+                        <a class="icon-btn" href="mailto:nathanielruiz98@gmail.com?Subject=Hello%20from%20your%20website"
+                            aria-label="Send an e-mail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <path d="m3.5 7 8.5 6 8.5-6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__portrait">
+                    <img src="resources/images/eliseo-headshot-min.jpg" width="2150" height="2150"
+                        alt="Portrait of Eliseo Nathaniel Ruiz Nowell">
+                    <div class="hero__badge">
+                        <img src="resources/images/amazon-logo-min.png" width="3840" height="2160" alt="Amazon logo">
+                        <span>Just Walk&nbsp;Out</span>
                     </div>
                 </div>
             </div>
-            <div class="root content-row">
-                <div class="showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img class="waterloo-stamp circle-img" src="resources/images/waterloo-logo-min.png"
-                            alt="University of Waterloo Logo">
+
+            <div class="container">
+                <div class="stats">
+                    <div class="stat">
+                        <p class="stat__value">5 yrs</p>
+                        <p class="stat__label">Full-time industry experience</p>
                     </div>
-                    <div class="col span-2-of-3 waterloo-text">
-                        <h3>University of Waterloo Computer Engineering Graduate</h3>
-                        <h5>B.A.Sc. Computer Engineering, Artificial Intelligence Option &nbsp;&#183;&nbsp; 6x Term
-                            Dean's List</h5>
-                        <div class="waterloo-data">
-                            <div class="col span-1-of-2 gpa-info">
-                                <h4>GPA</h4>
-                                <label>90.3%</label>
-                                <a class="btn btn-full" href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Transcript.pdf"
-                                    target="_blank">UW Transcript</a>
+                    <div class="stat">
+                        <p class="stat__value">200</p>
+                        <p class="stat__label">Stores running an algorithm I shipped</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value">50%</p>
+                        <p class="stat__label">Receipt latency removed by a re-architecture</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat__value">6</p>
+                        <p class="stat__label">Co-op terms across 24 months</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ About ============================ -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">About me</p>
+                    <h2>Machine learning is only useful once it survives production.</h2>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__body reveal">
+                        <p>
+                            I am a University of Waterloo Computer Engineering graduate who took the Artificial
+                            Intelligence option because I wanted to build systems that learn. What I did not expect was
+                            how much of that work happens after the model is accurate: latency budgets, memory ceilings,
+                            offline evaluations, and the careful milestone plans that move research code into a mainline
+                            that hundreds of stores depend on.
+                        </p>
+                        <p>
+                            That is the work I do now as an SDE 2 on Amazon Just Walk Out. I have been release lead on
+                            three algorithm launches &mdash; a streaming re-architecture, a Transformer-based beverage
+                            model, and a neural network that replaced a random forest classifier &mdash; each one
+                            coordinated across several engineers and researchers, and each one measured in latency,
+                            accuracy, and dollars saved.
+                        </p>
+                        <p>
+                            Before Just Walk Out I worked on AWS X-Ray and OpenTelemetry, where most of my code was open
+                            source and reviewed in public. Six co-op terms before that took me through Newfront
+                            Insurance, Electronic Arts, Splunk, Yahoo!, and Rave &mdash; front end, game tooling, iOS,
+                            and backend in turn. I am happiest on the part of a problem where the measurement and the
+                            engineering meet.
+                        </p>
+                    </div>
+
+                    <div class="card facts reveal">
+                        <div class="fact">
+                            <span class="fact__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" />
+                                    <circle cx="12" cy="10" r="2.5" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="fact__label">Based in</p>
+                                <p class="fact__value">Seattle, Washington</p>
                             </div>
-                            <div class="col span-1-of-2 waterloo-coursework">
-                                <h4>Coursework</h4>
-                                <ul>
-                                    <li class="uw-course">Distributed Systems - ECE 454</li>
-                                    <li class="uw-course">Fundamentals of Computer Intelligence - ECE 457b</li>
-                                    <li class="uw-course">Probabilistic Reasoning - ECE 493</li>
-                                    <li class="uw-course">Computer Vision - CS 484</li>
-                                    <li class="uw-course">Programming for Performance - ECE 459</li>
-                                    <li class="uw-course">Algorithms &amp; Data Structures - ECE 250</li>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 9 12 4 2 9l10 5 10-5z" />
+                                    <path d="M6 11.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="fact__label">Education</p>
+                                <p class="fact__value">B.A.Sc. Computer Engineering, University of Waterloo</p>
+                            </div>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="9" r="5" />
+                                    <path d="M8.5 13.5 7 22l5-2.5 5 2.5-1.5-8.5" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="fact__label">Certification</p>
+                                <p class="fact__value">AWS Certified Cloud Practitioner</p>
+                            </div>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="fact__label">Languages</p>
+                                <p class="fact__value">English, Spanish and French (fluent), Mandarin Chinese
+                                    (intermediate)</p>
+                            </div>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5V6a2 2 0 0 1 2-2h11l3 3v12.5" />
+                                    <path d="M8 8h6M8 12h8M8 16h5" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="fact__label">Currently</p>
+                                <p class="fact__value">Shipping computer vision to retail stores at
+                                    <a class="link-out" href="https://www.justwalkout.com/" target="_blank"
+                                        rel="noopener">Just Walk Out</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= Experience ========================= -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Five years shipping, plus six co-op terms getting there.</h2>
+                    <p>Release lead on three Just Walk Out algorithm launches, an AWS open source maintainer before
+                        that, and a co-op run through insurance tech, game tooling, iOS, and backend services.</p>
+                </div>
+
+                <div class="timeline">
+                    <article class="card role reveal">
+                        <div class="role__logo">
+                            <img src="resources/images/amazon-logo-min.png" width="3840" height="2160"
+                                alt="Amazon logo">
+                        </div>
+                        <div>
+                            <div class="role__head">
+                                <p class="role__org">Amazon Just Walk Out</p>
+                                <p class="role__dates">Aug 2022 &ndash; Present</p>
+                            </div>
+                            <h3 class="role__title">Software Development Engineer II</h3>
+                            <ul class="tags role__tags">
+                                <li class="tag">Java</li>
+                                <li class="tag">Python</li>
+                                <li class="tag">Computer Vision</li>
+                                <li class="tag">CNNs</li>
+                                <li class="tag">Redis</li>
+                                <li class="tag">RxJava</li>
+                                <li class="tag">DynamoDB</li>
+                                <li class="tag">SQL</li>
+                            </ul>
+                            <ul class="role__points">
+                                <li>
+                                    <strong>Release lead, streaming receipt latency.</strong> Designed a streaming store
+                                    orchestrator on Redis streams and Java RxFlowable that replaced 30 second batches
+                                    with three parallel request/response pipelines, cutting receipt latency by 50% while
+                                    coordinating milestones for four engineers.
+                                </li>
+                                <li>
+                                    <strong>Release lead, Transformer-based algorithm.</strong> Guided four SDEs and two
+                                    researchers through a four milestone plan that brought 6,000 lines of research code
+                                    for a beverage encoder/decoder model into production mainline, deployed to 200
+                                    stores after accuracy evaluations on more than 10 fixture types.
+                                </li>
+                                <li>
+                                    <strong>Release lead, neural network backend.</strong> Replaced a random forest
+                                    classifier with a neural network across 171 stores for a 68% latency improvement and
+                                    25% fewer false positives, then used memray to cut peak on-premises memory by 15%.
+                                </li>
+                                <li>
+                                    Retired the legacy system for a saving of $4,000 per month and a week of developer
+                                    effort each month, and called research code in-line from Java through JEP.
+                                </li>
+                                <li>
+                                    Shipped a sidecar service that automated account discovery and permissions, adopted
+                                    by seven teams for allow-listing during 171 store launches, and removed overly
+                                    aggressive DynamoDB locking to reduce store operation costs by 10%.
+                                </li>
+                            </ul>
+                            <p class="role__footer">
+                                <a class="link-out" href="https://www.justwalkout.com/" target="_blank" rel="noopener">
+                                    How Just Walk Out works
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card role reveal">
+                        <div class="role__logo">
+                            <img src="resources/images/amazon-logo-min.png" width="3840" height="2160"
+                                alt="Amazon logo">
+                        </div>
+                        <div>
+                            <div class="role__head">
+                                <p class="role__org">Amazon AWS X-Ray</p>
+                                <p class="role__dates">Jun 2021 &ndash; Aug 2022</p>
+                            </div>
+                            <h3 class="role__title">Software Development Engineer I</h3>
+                            <ul class="tags role__tags">
+                                <li class="tag">Python</li>
+                                <li class="tag">OpenTelemetry</li>
+                                <li class="tag">Java</li>
+                                <li class="tag">Go</li>
+                                <li class="tag">AWS</li>
+                                <li class="tag">Docker</li>
+                            </ul>
+                            <ul class="role__points">
+                                <li>Developed multi-threaded, long-running performance tests now used across six GitHub
+                                    repositories.</li>
+                                <li>Reworked release CI to support ARM architecture for the popular OpenTelemetry Lambda
+                                    layers.</li>
+                                <li>Wrote technical posts after production launches teaching users advanced telemetry
+                                    concepts, and merged fixes upstream in an open source library to unblock team CI and
+                                    reduce code debt.</li>
+                                <li>Commended by clients and team for meticulous handling of on-call
+                                    responsibilities.</li>
+                            </ul>
+                            <p class="role__footer">
+                                <a class="link-out"
+                                    href="https://github.com/open-telemetry/opentelemetry-python-contrib/pulls?q=is%3Apr+author%3Anathanielrn"
+                                    target="_blank" rel="noopener">
+                                    My OpenTelemetry Python Contrib pull requests
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card role reveal">
+                        <div class="role__logo">
+                            <img src="resources/images/amazon-logo-min.png" width="3840" height="2160"
+                                alt="Amazon logo">
+                        </div>
+                        <div>
+                            <div class="role__head">
+                                <p class="role__org">Amazon</p>
+                                <p class="role__dates">Sep 2020 &ndash; Dec 2020</p>
+                            </div>
+                            <h3 class="role__title">Software Engineer Intern</h3>
+                            <ul class="tags role__tags">
+                                <li class="tag">Python</li>
+                                <li class="tag">OpenTelemetry</li>
+                                <li class="tag">X-Ray</li>
+                                <li class="tag">Docker</li>
+                                <li class="tag">GitHub Actions</li>
+                            </ul>
+                            <ul class="role__points">
+                                <li>Split the OpenTelemetry Python project into core and contrib repositories over 90+
+                                    pull requests.</li>
+                                <li>Released the Python package that makes OpenTelemetry SDK traces compatible with AWS
+                                    X-Ray.</li>
+                                <li>Built Docker sample apps showcasing OpenTelemetry and AWS compatibility, and added
+                                    automated benchmarking to the GitHub Actions workflow.</li>
+                                <li>Presented proofs of concept to OpenTelemetry Python SIG stakeholders and internally
+                                    to Amazon engineers.</li>
+                            </ul>
+                            <p class="role__footer">
+                                <a class="link-out"
+                                    href="https://github.com/open-telemetry/opentelemetry-python/pulls?q=is%3Apr+author%3Anathanielrn"
+                                    target="_blank" rel="noopener">
+                                    My OpenTelemetry Python pull requests
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card role reveal">
+                        <div class="role__logo">
+                            <img src="resources/images/newfront-logo-min.png" width="1480" height="310"
+                                alt="Newfront Insurance logo">
+                        </div>
+                        <div>
+                            <div class="role__head">
+                                <p class="role__org">Newfront Insurance</p>
+                                <p class="role__dates">Sep 2019 &ndash; Dec 2019</p>
+                            </div>
+                            <h3 class="role__title">Full Stack Intern</h3>
+                            <ul class="tags role__tags">
+                                <li class="tag">TypeScript</li>
+                                <li class="tag">node.js</li>
+                                <li class="tag">React</li>
+                                <li class="tag">Postgres</li>
+                                <li class="tag">Datadog</li>
+                                <li class="tag">CircleCI</li>
+                            </ul>
+                            <ul class="role__points">
+                                <li>Added authentication and authorization to every endpoint, together with a redesigned
+                                    integration test suite.</li>
+                                <li>Owned front end changes in React and node.js that improved backend performance, and
+                                    learned cookie security to enable SSL validation on all website traffic.</li>
+                                <li>Ran Salesforce and Postgres SQL queries to repair data integrity issues quickly.
+                                </li>
+                                <li>Built a Datadog metrics dashboard whose tagging pinpointed a node website
+                                    bottleneck.</li>
+                            </ul>
+                            <p class="role__footer">
+                                <a class="link-out" href="https://www.newfront.com/" target="_blank" rel="noopener">
+                                    Newfront
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <details class="more-roles reveal">
+                    <summary>
+                        <span class="more-roles__show">Show four earlier co-op terms</span>
+                        <span class="more-roles__hide">Hide earlier co-op terms</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+
+                    <div class="more-roles__list">
+                        <article class="card role">
+                            <div class="role__logo">
+                                <img src="resources/images/ea-logo-min.png" width="1350" height="1350"
+                                    alt="Electronic Arts logo">
+                            </div>
+                            <div>
+                                <div class="role__head">
+                                    <p class="role__org">Electronic Arts</p>
+                                    <p class="role__dates">Co-op term</p>
+                                </div>
+                                <h3 class="role__title">.NET Developer Intern</h3>
+                                <ul class="tags role__tags">
+                                    <li class="tag">C#</li>
+                                    <li class="tag">WPF</li>
+                                    <li class="tag">XAML</li>
+                                    <li class="tag">C++</li>
+                                    <li class="tag">Frostbite</li>
+                                    <li class="tag">Maya</li>
+                                </ul>
+                                <ul class="role__points">
+                                    <li>Led an audio mixer tool UX refactor and optimized the C# datasource to UI
+                                        synchronizer.</li>
+                                    <li>Completed a level asset .fbx exporter for the Frostbite engine and linked it to
+                                        Maya as a UI extension that artists praised.</li>
+                                    <li>Wrote the C++ audio mixer serializer used in the Frostbite game pipeline build
+                                        routine.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="card role">
+                            <div class="role__logo">
+                                <img src="resources/images/splunk-white-min.png" width="900" height="900"
+                                    alt="Splunk logo">
+                            </div>
+                            <div>
+                                <div class="role__head">
+                                    <p class="role__org">Splunk</p>
+                                    <p class="role__dates">Co-op term</p>
+                                </div>
+                                <h3 class="role__title">iOS &amp; Backend Developer Intern</h3>
+                                <ul class="tags role__tags">
+                                    <li class="tag">Swift</li>
+                                    <li class="tag">RealmDB</li>
+                                    <li class="tag">Python</li>
+                                    <li class="tag">twisted</li>
+                                    <li class="tag">AWS</li>
+                                </ul>
+                                <ul class="role__points">
+                                    <li>Engineered a "CSS-like" iOS layout library that improved UI development time.
+                                    </li>
+                                    <li>Integrated local storage with RealmDB using a thread safe async multithreading
+                                        design, and surfaced Firebase remote notifications through the observer pattern.
+                                    </li>
+                                    <li>Wrote async Python handlers and combined a key-value store with the Splunk API
+                                        to serve dashboard CRUD requests.</li>
+                                </ul>
+                                <p class="role__footer">
+                                    <a class="link-out" href="https://apps.apple.com/us/app/splunk-mobile/id1420299852"
+                                        target="_blank" rel="noopener">
+                                        Splunk Mobile on the App Store
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M7 17 17 7M9 7h8v8" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card role">
+                            <div class="role__logo">
+                                <img src="resources/images/yahoo-white-min.png" width="1000" height="255"
+                                    alt="Yahoo! logo">
+                            </div>
+                            <div>
+                                <div class="role__head">
+                                    <p class="role__org">Yahoo!</p>
+                                    <p class="role__dates">Co-op term</p>
+                                </div>
+                                <h3 class="role__title">Backend Developer Intern</h3>
+                                <ul class="tags role__tags">
+                                    <li class="tag">node.js</li>
+                                    <li class="tag">MySQL</li>
+                                    <li class="tag">express</li>
+                                    <li class="tag">AWS</li>
+                                    <li class="tag">Mocha</li>
+                                    <li class="tag">Memcached</li>
+                                </ul>
+                                <ul class="role__points">
+                                    <li>API and database developer for the Yahoo! View product, writing node.js CRUD
+                                        handlers over MySQL.</li>
+                                    <li>Used AWS CloudSearch faceting with Elastic Beanstalk and SQS to queue async
+                                        server requests over HTTPS.</li>
+                                    <li>Finished an episode stream SQL fetch tool with retries and genre/offset query
+                                        parameters, and validated assets with YAML Swagger files plus Mocha system and
+                                        unit tests.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="card role">
+                            <div class="role__logo">
+                                <img src="resources/images/rave-logo-min.png" width="700" height="463" alt="Rave logo">
+                            </div>
+                            <div>
+                                <div class="role__head">
+                                    <p class="role__org">Rave</p>
+                                    <p class="role__dates">Co-op term</p>
+                                </div>
+                                <h3 class="role__title">iOS Developer Intern</h3>
+                                <ul class="tags role__tags">
+                                    <li class="tag">Swift</li>
+                                    <li class="tag">Objective-C</li>
+                                    <li class="tag">Xcode</li>
+                                    <li class="tag">CocoaPods</li>
+                                </ul>
+                                <ul class="role__points">
+                                    <li>Fixed bugs and crashes and revamped the UI in a Swift and Objective-C codebase,
+                                        optimizing performance with multi-threaded async requests.</li>
+                                    <li>Localized the app into four languages and refactored the user flow across every
+                                        screen with a UX designer.</li>
+                                    <li>Polished git skills resolving conflicts, rebasing, and cherry-picking commits.
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- =========================== Skills =========================== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Toolkit</p>
+                    <h2>What I reach for.</h2>
+                </div>
+
+                <div class="skills__grid">
+                    <div class="card skill-group reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+                            </svg>
+                            Languages
+                        </h3>
+                        <ul class="tags">
+                            <li class="tag tag--accent">Java</li>
+                            <li class="tag tag--accent">Python</li>
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">SQL</li>
+                            <li class="tag">C#</li>
+                            <li class="tag">C/C++</li>
+                            <li class="tag">Swift</li>
+                            <li class="tag">Objective-C</li>
+                        </ul>
+                    </div>
+
+                    <div class="card skill-group reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <ellipse cx="12" cy="6" rx="8" ry="3" />
+                                <path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" />
+                            </svg>
+                            Platform &amp; data
+                        </h3>
+                        <ul class="tags">
+                            <li class="tag tag--accent">AWS</li>
+                            <li class="tag">DynamoDB</li>
+                            <li class="tag">Redis</li>
+                            <li class="tag">MySQL</li>
+                            <li class="tag">Postgres</li>
+                            <li class="tag">Docker</li>
+                            <li class="tag">Linux</li>
+                            <li class="tag">git</li>
+                            <li class="tag">node.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="card skill-group reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M12 2v4m0 12v4M2 12h4m12 0h4M5 5l3 3m8 8 3 3m0-14-3 3m-8 8-3 3" />
+                            </svg>
+                            Machine learning
+                        </h3>
+                        <ul class="tags">
+                            <li class="tag tag--accent">Computer Vision</li>
+                            <li class="tag tag--accent">CNNs</li>
+                            <li class="tag">Transformers</li>
+                            <li class="tag">NumPy</li>
+                            <li class="tag">Jupyter</li>
+                            <li class="tag">MATLAB</li>
+                            <li class="tag">memray</li>
+                            <li class="tag">JEP</li>
+                        </ul>
+                    </div>
+
+                    <div class="card skill-group reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16v12H4zM8 20h8M12 16v4" />
+                            </svg>
+                            Frameworks &amp; tooling
+                        </h3>
+                        <ul class="tags">
+                            <li class="tag">OpenTelemetry</li>
+                            <li class="tag">RxJava</li>
+                            <li class="tag">React</li>
+                            <li class="tag">iOS</li>
+                            <li class="tag">Android</li>
+                            <li class="tag">WPF</li>
+                            <li class="tag">Mocha</li>
+                            <li class="tag">GitHub Actions</li>
+                            <li class="tag">Datadog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== Projects ========================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Things I built because I wanted them to exist.</h2>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="card project reveal">
+                        <div class="project__media">
+                            <img src="resources/images/app-iPhone-min.png" width="613" height="1255" loading="lazy"
+                                alt="Color Conquest running on an iPhone">
+                        </div>
+                        <div class="project__body">
+                            <h3>Color Conquest</h3>
+                            <ul class="tags">
+                                <li class="tag">Swift</li>
+                                <li class="tag">Bluetooth</li>
+                                <li class="tag">AdMob</li>
+                            </ul>
+                            <p>
+                                A multiplayer iOS strategy game. I designed a Bluetooth connected state machine for
+                                cross-device communication, populated tables and collections from dynamically changing
+                                data, and tuned the end-of-game algorithm so slower devices stayed responsive.
+                            </p>
+                            <div class="project__footer">
+                                <span class="project__note">No longer listed on the App Store</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project__media">
+                            <img src="resources/images/wat-2048-min.png" width="604" height="1200" loading="lazy"
+                                alt="WAT 2048 game screen">
+                        </div>
+                        <div class="project__body">
+                            <h3>WAT 2048</h3>
+                            <ul class="tags">
+                                <li class="tag">Java</li>
+                                <li class="tag">Android</li>
+                                <li class="tag">Sensors</li>
+                            </ul>
+                            <p>
+                                An Android take on 2048 driven by accelerometer and rotation sensors. I replicated the
+                                game with object oriented Java, coordinated the team as delegated project manager, and
+                                profiled the running game loop for cross-OS performance.
+                            </p>
+                            <div class="project__footer">
+                                <a class="link-out" href="https://github.com/NathanielRN/WAT2048" target="_blank"
+                                    rel="noopener">
+                                    Source on GitHub
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project reveal">
+                        <div class="project__media">
+                            <img src="resources/images/pray4meBackend-logo-min.png" width="660" height="503"
+                                loading="lazy" alt="Pray4Me backend logo">
+                        </div>
+                        <div class="project__body">
+                            <h3>Pray4Me Backend</h3>
+                            <ul class="tags">
+                                <li class="tag">node.js</li>
+                                <li class="tag">express</li>
+                                <li class="tag">MongoDB</li>
+                            </ul>
+                            <p>
+                                A server for a community prayer app. Express handles CRUD requests, a driver stores
+                                entries by authenticated Facebook id in MongoDB, and authorization tokens against
+                                bibles.org power verse lookup alongside a separate image upload path.
+                            </p>
+                            <div class="project__footer">
+                                <a class="link-out" href="https://github.com/NathanielRN/Pray4MeBackend" target="_blank"
+                                    rel="noopener">
+                                    Source on GitHub
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= Education ========================== -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="eyebrow">Education</p>
+                    <h2>Waterloo, with the artificial intelligence option.</h2>
+                </div>
+
+                <div class="education">
+                    <div class="card reveal">
+                        <div class="degree__head">
+                            <span class="degree__logo">
+                                <img src="resources/images/waterloo-logo-min.png" width="200" height="200"
+                                    loading="lazy" alt="University of Waterloo logo">
+                            </span>
+                            <div>
+                                <h3>University of Waterloo</h3>
+                                <p class="muted">B.A.Sc. Computer Engineering</p>
+                            </div>
+                        </div>
+
+                        <dl class="degree__meta">
+                            <div class="degree__row">
+                                <dt>Option</dt>
+                                <dd>Artificial Intelligence</dd>
+                            </div>
+                            <div class="degree__row">
+                                <dt>Cumulative average</dt>
+                                <dd>90.3% over 8 terms</dd>
+                            </div>
+                            <div class="degree__row">
+                                <dt>Honours</dt>
+                                <dd>6&times; Term Dean's List</dd>
+                            </div>
+                            <div class="degree__row">
+                                <dt>Co-op</dt>
+                                <dd>6 terms, 24 months</dd>
+                            </div>
+                        </dl>
+
+                        <div class="degree__actions">
+                            <a class="btn btn--ghost btn--sm"
+                                href="resumes/pdfs/Eliseo%20Nathaniel%20Ruiz%20Nowell%20Transcript.pdf" target="_blank"
+                                rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <path d="M14 2v6h6M9 15h6M9 11h3" />
+                                </svg>
+                                View transcript
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card coursework reveal">
+                            <h3>Selected coursework</h3>
+                            <ul class="coursework__list">
+                                <li><span>Distributed Systems</span><span class="coursework__code">ECE 454</span></li>
+                                <li><span>Fundamentals of Computer Intelligence</span><span
+                                        class="coursework__code">ECE 457b</span></li>
+                                <li><span>Probabilistic Reasoning</span><span class="coursework__code">ECE 493</span>
+                                </li>
+                                <li><span>Computer Vision</span><span class="coursework__code">CS 484</span></li>
+                                <li><span>Programming for Performance</span><span class="coursework__code">ECE
+                                        459</span></li>
+                                <li><span>Algorithms &amp; Data Structures</span><span class="coursework__code">ECE
+                                        250</span></li>
+                            </ul>
+                            <p class="role__footer">
+                                <a class="link-out" href="https://www.coursera.org/learn/machine-learning/"
+                                    target="_blank" rel="noopener">
+                                    Plus Stanford's Machine Learning course, 8 assignments
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="card beyond reveal">
+                            <h3>Beyond the keyboard</h3>
+                            <div class="beyond__row">
+                                <p class="beyond__label">Interests</p>
+                                <ul class="tags">
+                                    <li class="tag">Arduino</li>
+                                    <li class="tag">Half marathons</li>
+                                    <li class="tag">Chinese calligraphy</li>
+                                    <li class="tag">Level 9 RCM piano</li>
+                                </ul>
+                            </div>
+                            <div class="beyond__row">
+                                <p class="beyond__label">Volunteering</p>
+                                <ul class="tags">
+                                    <li class="tag">Church app developer</li>
+                                    <li class="tag">Worship team pianist</li>
+                                    <li class="tag">ECE mentor</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="Experience">
-        <h2>Experience</h2>
-        <div class="row showcase">
-            <h3>Amazon Just Walk Out</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Software Development Engineer II (Aug 2022 &ndash; Present)</h4>
-                        <h5>Java, &nbsp;Python, &nbsp;CNNs, &nbsp;Computer Vision, &nbsp;Redis, &nbsp;RxJava,
-                            &nbsp;DynamoDB, &nbsp;SQL</h5>
-                        <p>
-                            Release Lead for a streaming store orchestrator architecture that delivered a 50% reduction
-                            in receipt latency, replacing 30s batches with 3 parallel request/response pipelines built
-                            on Redis streams and Java RxFlowable<br><br>
-                            Release Lead for a new Transformer-based Beverage Encoder/Decoder model, guiding 4 SDEs and
-                            2 researchers through a 4 milestone plan that brought 6,000 lines of research code to
-                            production mainline and deployed to 200 stores<br><br>
-                            Saved $4,000/month and 1 week/month of dev effort by deprecating the legacy algorithm, and
-                            called research code in-line from Java using JEP (Java Native Interface)<br><br>
-                            Release Lead for replacing a RandomForest Classifier with a Neural Network backend, seeing a
-                            68% latency improvement and 25% false positive reduction across 171 stores<br><br>
-                            Used memray to debug allocations and cut max on-prem memory usage by 15%, and sped up
-                            feature extraction with a timestamp feature cache and vectorization<br><br>
-                            Shipped a sidecar service automating new account discovery and permissions that 7 teams
-                            adopted for allow-listing during 171 store launches<br><br>
-                            Reduced store-op costs by 10% by removing overly aggressive DynamoDB locking<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://www.justwalkout.com/" target="_blank">Just Walk Out</a>
-                    </div>
+        </section>
+
+        <!-- ========================== Contact =========================== -->
+        <section class="section section--tight contact" id="contact">
+            <div class="container">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's talk about the hard part of your problem.</h2>
+                <p>
+                    Whether it is a model that needs to survive production, telemetry that needs to make sense, or a
+                    launch that needs a plan, I would be glad to hear about it.
+                </p>
+                <div class="contact__actions">
+                    <a class="btn btn--primary"
+                        href="mailto:nathanielruiz98@gmail.com?Subject=Hello%20from%20your%20website">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <path d="m3.5 7 8.5 6 8.5-6" />
+                        </svg>
+                        nathanielruiz98@gmail.com
+                    </a>
+                    <a class="btn btn--ghost" href="https://www.linkedin.com/in/nathanielruiz/" target="_blank"
+                        rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9.75h4v11.25H3zM10 9.75h3.8v1.54h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.09V21h-4v-5.02c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V21h-4z" />
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="row showcase">
-            <h3>Amazon AWS X-Ray</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Software Development Engineer I (June 2021 &ndash; Aug 2022)</h4>
-                        <h5>Python, OpenTelemetry (OTel), Java, Go, AWS, X-Ray, Docker, GitHub Actions, YAML, bash</h5>
-                        <p>
-                            Developed multi-threaded long-running performance tests used in 6 GitHub repos<br><br>
-                            Reworked release CI to support ARM architecture for popular Otel Lambda Layers<br><br>
-                            Wrote technical posts and design docs teaching users advanced tracing concepts<br><br>
-                            Merged fixes in OSS library to solve issue in team CI thereby reducing code debt<br><br>
-                            Guided AWS packages through several pipelines stages and region deployments<br><br>
-                            Commended by clients and team for meticulous handling of on-call responsibilities<br><br>
-                        </p>
-                        <a class="btn btn-full"
-                            href="https://github.com/open-telemetry/opentelemetry-python-contrib/pulls?q=is%3Apr+author%3Anathanielrn"
-                            target="_blank">OpenTelemetry Python Contrib</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Amazon Web Services</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Software Engineer Intern (Sep 2020 &ndash; Dec 2020)</h4>
-                        <h5>Python, OpenTelemetry (OTel), Java, Go, AWS, X-Ray, Docker, GitHub Actions, YAML, bash</h5>
-                        <p>
-                            Split OTel Python project into Core/Contrib repositories over 90+ pull requests<br><br>
-                            Released Python package to make OTel SDK traces compatible with AWS X-Ray<br><br>
-                            Leveraged Docker Sample Apps to create OTel and X-Ray compatibility CI pipeline<br><br>
-                            Incorporated automated performance tests to OTel Python GitHub Actions workflow<br><br>
-                            Presented POCs to OTel Python SIG stakeholders and internally to Amazon engineers<br><br>
-                        </p>
-                        <a class="btn btn-full"
-                            href="https://github.com/open-telemetry/opentelemetry-python/pulls?q=is%3Apr+author%3Anathanielrn"
-                            target="_blank">OpenTelemetry Python</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Machine Learning by Stanford University</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/coursera-min.png" alt="Coursera Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Self Taught Online Course</h4>
-                        <h5>Python, Conda, jupyter notebooks, NumPy, MatLab, Scipy, Coursera</h5>
-                        <p>
-                            Completed 8 Python Assignments in Stanford online ML course with 55M+ Learners<br><br>
-                            Spent 60+ hours developing algorithms to iteratively improve accuracy using Scipy<br><br>
-                            Implemented Logistic Regression, K-means clustering, and Debugging best practices<br><br>
-                            Employed Neural Network Feed Forward/Backwards Propagation to classify images<br><br>
-                            Utilized NumPy and Linear Algebra experience to vectorize slow matrix calculations<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://www.coursera.org/learn/machine-learning/"
-                            target="_blank">ML Coursera Course</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Newfront Insurance</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/newfront-logo-min.png" alt="Newfront Insurance Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Full Stack Developer Intern (Sep 2019 &ndash; Dec 2019)</h4>
-                        <h5>Typescript, Node.js, Heroku, Datadog, Postgres, Salesforce SQL, CircleCI, React</h5>
-                        <p>
-                            Added Auth-N/Auth-Z for all endpoints coupled with redesigned Integration Tests<br><br>
-                            Owned FrontEnd changes using React and node.js to improve Backend performance<br><br>
-                            Ran Salesforce and Postgres SQL queries to quickly repair data integrity issues<br><br>
-                            Quickly learned about Cookie Security to enable SSL validation on all website
-                            traffic<br><br>
-                            Built Datadog Metrics Dashboard using tagging to pinpoint node website bottleneck<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://www.newfront.com/" target="_blank">Newfront Website</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Electronic Arts inc.</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/ea-logo-min.png" alt="EA Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>.NET Developer Intern</h4>
-                        <h5>C&#35;, Python, Visual Studio, Wpf, XAML, C++, Frostbite, Maya</h5>
-                        <p>
-                            Led Audio Mixer Tool UX refactor and optimized C# datasource to UI synchronizer<br><br>
-                            Updated Cinematics Timeline Track with cross-module data synchronizing listeners<br><br>
-                            Individually completed a Level Asset .fbx Exporter for Frostbite Video Game Engine<br><br>
-                            Linked Level Asset Exporter to Maya as UI extension which was praised by artists<br><br>
-                            Wrote C++ Audio Mixer serializer for use in Frostbite Game Pipeline build routine<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://www.ea.com/careers/students" target="_blank">EA
-                            Internships</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Splunk></h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/splunk-white-min.png" alt="Splunk> Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>iOS &amp; Backend Developer Intern</h4>
-                        <h5>Swift, &nbsp;git, &nbsp;XML, &nbsp;Python, &nbsp;CocoaPods, &nbsp;RealmDB, &nbsp;AWS,
-                            &nbsp;twisted</h5>
-                        <p>
-                            Engineered iOS UI Layout “CSS-like” library which improved UI development time<br><br>
-                            Integrated local storage using RealmDB with thread safe async multithreading design<br><br>
-                            Displayed new alerts from Firebase remote notifications using the Observer Pattern<br><br>
-                            Wrote async handlers in Python to process mobile client dashboard favourite requests<br><br>
-                            Combined key-value-store with Splunk> API to serve CRUD requests from clients<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://apps.apple.com/us/app/splunk-mobile/id1420299852"
-                            target="_blank">Splunk Mobile</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Yahoo!</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/yahoo-white-min.png" alt="Yahoo! Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Backend Developer Intern</h4>
-                        <h5>node.js, &nbsp;MySQL, &nbsp;express, &nbsp;AWS, &nbsp;Python, &nbsp;YAML, &nbsp;Mocha,
-                            &nbsp;Memcached</h5>
-                        <p>
-                            API &amp; Database developer for Yahoo! View product <br><br>
-                            Developed node.js CRUD handlers for MySQL database modification and retrieval<br><br>
-                            Created Python file I/O methods to populate .tsv files with series and episode items<br><br>
-                            Used AWS CloudSearch to facet and filterQuery buckets, used Elastic BeanStalk together with
-                            SQS to queue automatic async server requests on SSL enabled HTTPS<br><br>
-                            Finished episode stream SQL fetch tool with retry, query parameters for genre/offset<br><br>
-                            Introduced validation of assets with YAML swagger files and Mocha system/unit tests<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://view.yahoo.com" target="_blank">Yahoo! View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Rave</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/rave-logo-min.png" alt="Rave Logo">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>iOS Developer Intern</h4>
-                        <h5>Swift, &nbsp;git, &nbsp;Xcode, &nbsp;vim, &nbsp;Objective-C, &nbsp;CocoaPods </h5>
-                        <p>
-                            Worked with Swift database and Objective-C libraries to fix bugs, fix crashes, revamp the UI
-                            and optimize performance by considering multi-threading/async requests<br><br>
-                            Excellent understanding of Xcode IDE, iOS SDK, and 3rd party library integration
-                            (SDWebImage)<br><br>
-                            Communicated with coworkers to localize the app into 4 different languages<br><br>
-                            Polished git skills to solve conflicts with vim, ease rebasing, and cherry-pick
-                            commits<br><br>
-                            Refactored user flow across all screens as part of collaboration with UX designer<br><br>
-                        </p>
-                        <a class="btn btn-full"
-                            href="https://itunes.apple.com/us/app/rave-videos-with-friends/id929775122?mt=8"
-                            target="_blank">App Store</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Projects">
-        <h2>Projects</h2>
-        <div class="row showcase">
-            <h3>Mobile</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo js--wp-2">
-                        <img src="resources/images/app-iPhone-min.png" alt="Color Conquest Image">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Color Conquest</h4>
-                        <h5>Swift, &nbsp;git, &nbsp;CocoaPods, &nbsp;AdMobs</h5>
-                        <p>
-                            Designed Bluetooth connected state-machine for communication across devices<br><br>
-                            Researched docs to add tables/collections populated by dynamically changing data<br><br>
-                            Respected Apple’s MVC by implementing delegates and protocols as part of Protocol Oriented
-                            Programming<br><br>
-                            Considered "game end" algorithm performance to optimize for slower devices response<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://itunes.apple.com/app/id1316312994" target="_blank">App
-                            Store</a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo js--wp-3">
-                        <img src="resources/images/wat-2048-min.png" alt="Wat 2048 Image">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Wat 2048</h4>
-                        <h5>Java, &nbsp;Android Studio</h5>
-                        <p>
-                            Processed data received from accelerometer/rotational sensors and ensured appropriate event
-                            handlers were called using the Android Studio IDE<br><br>
-                            Replicated the popular mobile game using OOP Java design techniques<br><br>
-                            Oversaw the implementation of our team design as delegated project manager and coordinated
-                            progress using Subversion<br><br>
-                            Investigated best cross-OS compatibility techniques as well as performance optimization when
-                            using a running game loop<br><br>
-                            <a class="btn btn-full" href="https://github.com/NathanielRN/WAT2048"
-                                target="_blank">Git</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row showcase">
-            <h3>Backend</h3>
-            <div class="content-row">
-                <div class="root showcase-item">
-                    <div class="col span-1-of-3 showcase-item-logo">
-                        <img src="resources/images/pray4meBackend-logo-min.png" alt="Pray 4 Me Backend App">
-                    </div>
-                    <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Pray4MeBackend</h4>
-                        <h5>node.js, &nbsp;express, &nbsp;mongoDB, &nbsp;git</h5>
-                        <p>
-                            Functional server client on heroku to handle CRUD requests using express module<br><br>
-                            Included a driver to store by logged in FB id to the incorporated mongoDB database<br><br>
-                            Integrated with authorization tokens to make JSON data requests from bibles.org to allow
-                            verse lookup and with a separate driver to support image uploading<br><br>
-                        </p>
-                        <a class="btn btn-full" href="https://github.com/NathanielRN/Pray4MeBackend"
-                            target="_blank">Git</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="row">
-            <div class="col span-6-of-7 footer-text">
-                <ul class="footer-nav">
-                    <li><a href="https://uwaterloo.ca/hire/" target="_blank">About UW Co-op Work Terms</a></li>
-                    <li><a href="https://uwaterloo.ca/electrical-computer-engineering/about-electrical-and-computer-engineering"
-                            target="_blank">About UW Computer Engineering</a></li>
-                    <li><a href="mailto:nathanielruiz98@gmail.com?Subject=I%20Love%20Your%20Website!"
-                            target="_top">Contact Eliseo By E-mail</a></li>
-                    <li><a href="https://www.justwalkout.com/" target="_blank">About Just Walk Out</a></li>
-                </ul>
-            </div>
-            <div class="col span-1-of-7">
-                <ul class="social-links">
-                    <li><a href="https://github.com/NathanielRN" target="_blank"><i class="ion-social-github"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/nathanielruiz/" target="_blank"><i
-                                class="ion-social-linkedin bob"></i></a></li>
-                </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>&copy; <span class="js-year">2026</span> Eliseo Nathaniel Ruiz Nowell &middot; Built by hand with HTML and
+                CSS</p>
+            <div class="site-footer__links">
+                <a href="https://github.com/NathanielRN" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/nathanielruiz/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.justwalkout.com/" target="_blank" rel="noopener">Just Walk Out</a>
+                <a href="https://uwaterloo.ca/hire/" target="_blank" rel="noopener">UW Co-op</a>
+                <a href="#top">Back to top</a>
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--- Global site tag (gtag.js) - Google Analytics --->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110323397-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-110323397-1');
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Eliseo Nathaniel Ruiz Nowell",
+            "jobTitle": "Software Development Engineer II",
+            "url": "https://nathanielrn.github.io/eliseoruizlife/",
+            "email": "mailto:nathanielruiz98@gmail.com",
+            "image": "https://nathanielrn.github.io/eliseoruizlife/resources/images/eliseo-headshot-min.jpg",
+            "worksFor": { "@type": "Organization", "name": "Amazon" },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Waterloo" },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Seattle",
+                "addressRegion": "WA",
+                "addressCountry": "US"
+            },
+            "knowsLanguage": ["English", "Spanish", "French", "Mandarin Chinese"],
+            "sameAs": [
+                "https://github.com/NathanielRN",
+                "https://www.linkedin.com/in/nathanielruiz/"
+            ]
+        }
     </script>
-    <script src="resources/javascript/script.js"></script>
-    <script src="vendors/javascript/jquery.waypoints.min.js"></script>
+    <script src="resources/javascript/site.js" defer></script>
 </body>
 
 </html>

@@ -6,6 +6,24 @@ and wanted to put my new skills to use! If you have any comments please add them
 
 Thanks for visiting!
 
+## Structure
+
+The site is a single hand-written page with no build step:
+
+- `index.html` — all content
+- `resources/css/site.css` — the whole design system (tokens, layout, responsive,
+  reduced-motion and print rules)
+- `resources/javascript/site.js` — sticky-header state, mobile navigation,
+  scroll reveals, active-section highlighting (vanilla, no dependencies)
+- `resources/images/`, `resources/favicons/`, `resumes/pdfs/` — assets
+
+Preview it by opening `index.html` directly, or with
+`python3 -m http.server` from the repo root.
+
+The older jQuery/animate.css/ionicons stack (`resources/css/style.css`,
+`queries.css`, `grid.css`, `resources/javascript/script.js`, `vendors/`) is no
+longer referenced by `index.html` and can be deleted once nothing else needs it.
+
 ## Hosting
 
 GitHub Pages serves this site from the root of the `master` branch. Pushing to
