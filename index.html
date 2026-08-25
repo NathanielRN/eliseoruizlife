@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio website for Eliseo Ruiz Nowell, a Computer Engineering student at University of Waterloo.">
+        content="Portfolio website for Eliseo Ruiz Nowell, a Software Engineer in Seattle, WA working on Amazon Just Walk Out.">
 
     <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="vendors/css/grid.css" rel="stylesheet" type="text/css">
@@ -53,7 +53,7 @@
     </header>
     <section id="AboutMe">
         <div class="row">
-            <h2>Computer Engineering Student</h2>
+            <h2>Software Engineer</h2>
             <div class="root content-row">
                 <div class="showcase-item">
                     <div class="col span-1-of-3 showcase-item-logo">
@@ -62,13 +62,17 @@
                     </div>
                     <div class="col span-2-of-3 showcase-item-text">
                         <h3> About Me</h3>
-                        <p> Hi! I am a University of Waterloo Computer Engineering Graduate who is passionate about
+                        <p> Hi! I am a Software Engineer in Seattle, WA with 5 years of full-time industry experience,
+                            and a University of Waterloo Computer Engineering Graduate who is passionate about
                             using Machine Learning and Artificial Intelligence to train systems that will improve our
-                            day-to-day lives. At UW I've fostered my sense of independence, resourcefulness, and have
-                            been fortunate to have made big contributions over 6 Co-ops (24 Months). Over 8 terms at UW
-                            I obtained a cumulative average of 90.3%. Most recently I have been working as a full time Software Development Engineer
-                            at Amazon where I became very familiar with writing code to integrate Amazon Web
-                            Services with OpenTelemetry.</p>
+                            day-to-day lives. Today I am an SDE 2 on Amazon Just Walk Out, where I lead the release of
+                            Computer Vision and Neural Network algorithms that let shoppers grab what they want and
+                            leave without stopping to check out. Before that I worked on AWS X-Ray, where I became very
+                            familiar with writing code to integrate Amazon Web Services with OpenTelemetry. At UW I've
+                            fostered my sense of independence, resourcefulness, and have been fortunate to have made big
+                            contributions over 6 Co-ops (24 Months). Over 8 terms at UW I obtained a cumulative average
+                            of 90.3%. I am also AWS Cloud Practitioner certified and speak fluent Spanish and French,
+                            plus intermediate Mandarin Chinese.</p>
                     </div>
                 </div>
             </div>
@@ -80,6 +84,8 @@
                     </div>
                     <div class="col span-2-of-3 waterloo-text">
                         <h3>University of Waterloo Computer Engineering Graduate</h3>
+                        <h5>B.A.Sc. Computer Engineering, Artificial Intelligence Option &nbsp;&#183;&nbsp; 6x Term
+                            Dean's List</h5>
                         <div class="waterloo-data">
                             <div class="col span-1-of-2 gpa-info">
                                 <h4>GPA</h4>
@@ -107,17 +113,50 @@
     <section id="Experience">
         <h2>Experience</h2>
         <div class="row showcase">
-            <h3>Amazon Web Services</h3>
+            <h3>Amazon Just Walk Out</h3>
             <div class="content-row">
                 <div class="root showcase-item">
                     <div class="col span-1-of-3 showcase-item-logo">
                         <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
                     </div>
                     <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Software Development Engineer</h4>
+                        <h4>Software Development Engineer II (Aug 2022 &ndash; Present)</h4>
+                        <h5>Java, &nbsp;Python, &nbsp;CNNs, &nbsp;Computer Vision, &nbsp;Redis, &nbsp;RxJava,
+                            &nbsp;DynamoDB, &nbsp;SQL</h5>
+                        <p>
+                            Release Lead for a streaming store orchestrator architecture that delivered a 50% reduction
+                            in receipt latency, replacing 30s batches with 3 parallel request/response pipelines built
+                            on Redis streams and Java RxFlowable<br><br>
+                            Release Lead for a new Transformer-based Beverage Encoder/Decoder model, guiding 4 SDEs and
+                            2 researchers through a 4 milestone plan that brought 6,000 lines of research code to
+                            production mainline and deployed to 200 stores<br><br>
+                            Saved $4,000/month and 1 week/month of dev effort by deprecating the legacy algorithm, and
+                            called research code in-line from Java using JEP (Java Native Interface)<br><br>
+                            Release Lead for replacing a RandomForest Classifier with a Neural Network backend, seeing a
+                            68% latency improvement and 25% false positive reduction across 171 stores<br><br>
+                            Used memray to debug allocations and cut max on-prem memory usage by 15%, and sped up
+                            feature extraction with a timestamp feature cache and vectorization<br><br>
+                            Shipped a sidecar service automating new account discovery and permissions that 7 teams
+                            adopted for allow-listing during 171 store launches<br><br>
+                            Reduced store-op costs by 10% by removing overly aggressive DynamoDB locking<br><br>
+                        </p>
+                        <a class="btn btn-full" href="https://www.justwalkout.com/" target="_blank">Just Walk Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row showcase">
+            <h3>Amazon AWS X-Ray</h3>
+            <div class="content-row">
+                <div class="root showcase-item">
+                    <div class="col span-1-of-3 showcase-item-logo">
+                        <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
+                    </div>
+                    <div class="col span-2-of-3 showcase-item-text">
+                        <h4>Software Development Engineer I (June 2021 &ndash; Aug 2022)</h4>
                         <h5>Python, OpenTelemetry (OTel), Java, Go, AWS, X-Ray, Docker, GitHub Actions, YAML, bash</h5>
                         <p>
-                            Modularized 6-hour performance tests using docker containers used in 6 OSS repos<br><br>
+                            Developed multi-threaded long-running performance tests used in 6 GitHub repos<br><br>
                             Reworked release CI to support ARM architecture for popular Otel Lambda Layers<br><br>
                             Wrote technical posts and design docs teaching users advanced tracing concepts<br><br>
                             Merged fixes in OSS library to solve issue in team CI thereby reducing code debt<br><br>
@@ -139,7 +178,7 @@
                         <img src="resources/images/amazon-logo-min.png" alt="Amazon Logo">
                     </div>
                     <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Software Engineer Intern</h4>
+                        <h4>Software Engineer Intern (Sep 2020 &ndash; Dec 2020)</h4>
                         <h5>Python, OpenTelemetry (OTel), Java, Go, AWS, X-Ray, Docker, GitHub Actions, YAML, bash</h5>
                         <p>
                             Split OTel Python project into Core/Contrib repositories over 90+ pull requests<br><br>
@@ -186,7 +225,7 @@
                         <img src="resources/images/newfront-logo-min.png" alt="Newfront Insurance Logo">
                     </div>
                     <div class="col span-2-of-3 showcase-item-text">
-                        <h4>Full Stack Developer Intern</h4>
+                        <h4>Full Stack Developer Intern (Sep 2019 &ndash; Dec 2019)</h4>
                         <h5>Typescript, Node.js, Heroku, Datadog, Postgres, Salesforce SQL, CircleCI, React</h5>
                         <p>
                             Added Auth-N/Auth-Z for all endpoints coupled with redesigned Integration Tests<br><br>
@@ -378,8 +417,9 @@
                     <li><a href="https://uwaterloo.ca/hire/" target="_blank">About UW Co-op Work Terms</a></li>
                     <li><a href="https://uwaterloo.ca/electrical-computer-engineering/about-electrical-and-computer-engineering"
                             target="_blank">About UW Computer Engineering</a></li>
-                    <li><a href="mailto:enruizno@uwaterloo.ca?Subject=I%20Love%20Your%20Website!" target="_top">Contact
-                            Eliseo By E-mail</a></li>
+                    <li><a href="mailto:nathanielruiz98@gmail.com?Subject=I%20Love%20Your%20Website!"
+                            target="_top">Contact Eliseo By E-mail</a></li>
+                    <li><a href="https://www.justwalkout.com/" target="_blank">About Just Walk Out</a></li>
                 </ul>
             </div>
             <div class="col span-1-of-7">
