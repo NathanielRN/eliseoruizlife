@@ -20,9 +20,8 @@ The site is a single hand-written page with no build step:
 Preview it by opening `index.html` directly, or with
 `python3 -m http.server` from the repo root.
 
-The older jQuery/animate.css/ionicons stack (`resources/css/style.css`,
-`queries.css`, `grid.css`, `resources/javascript/script.js`, `vendors/`) is no
-longer referenced by `index.html` and can be deleted once nothing else needs it.
+The original 2017 jQuery/animate.css/ionicons stack was removed with the 2026
+redesign; see the git history if you ever need it back.
 
 ## Hosting
 
