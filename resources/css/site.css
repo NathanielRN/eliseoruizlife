@@ -834,7 +834,7 @@ strong {
 }
 
 .role__dates {
-    color: var(--faint);
+    color: var(--text);
     font-family: var(--font-mono);
     font-size: 0.8rem;
     white-space: nowrap;
